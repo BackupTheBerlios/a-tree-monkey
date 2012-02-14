@@ -1,0 +1,56 @@
+    <translation xml:lang="de" xmlns="urn:attacktree.org:schemas:attack-tree-monkey:1.0">
+      <constraints>Randbedingungen</constraints>
+      <attacker>Angreifer</attacker>
+      <defender>Verteidiger</defender>
+      <attack_tree>Angriffsbaum</attack_tree>
+      <overview>Übersicht</overview>
+      <details>Einzelheiten</details>
+      <excluded_attacks>Ausgeschlossene Angriffe</excluded_attacks>
+      <defences_not_applicable>Aktivierte Verteidigungsmaßnahmen, die sich nicht auf diesen Angriffsbaum anwenden lassen</defences_not_applicable>
+      <attack_tree_of_defences><span xmlns='http://www.w3.org/1999/xhtml' style="font-style:italic;">Verteidigungsmaßnahmen</span> und <span xmlns='http://www.w3.org/1999/xhtml' class="attacktitleUndefended" style="font-style:italic;">mühelose Angriffe</span> im Angriffsbaum</attack_tree_of_defences>
+      <skip_defences>Verteidigungsmaßnahmen innerhalb eines mühelosen Angriffs werden nicht in dessen Vaterknoten einberechnet.</skip_defences>
+      <properties>Eigenschaften</properties>
+      <direct_properties>Einberechnete direkte Angaben</direct_properties>
+      <means>Mittel</means>
+      <for_end>für Zweck</for_end>
+      <sufficient>hinreichend</sufficient>
+      <necessary>notwendig</necessary>
+      <or>oder</or>
+      <and>und</and>
+      <is_false>ist falsch</is_false>
+      <false>falsch</false>
+      <true>wahr</true>
+      <none>keine</none>
+      <duplicate_property_name>Doppelter Eigenschaftsname</duplicate_property_name>
+      <at_attacknode>im Angriffsknoten</at_attacknode>
+      <unknown_attacknode_type>'type'-Attribut muss den Wert 'or' oder 'and' haben</unknown_attacknode_type>
+      <repeat_with_wrong_type>'repeat'-Attribut enthält eine Eigenschaft mit dem ungeeigneten Typ</repeat_with_wrong_type>
+      <duplicate_filter>Doppelte Filtervorgabe für die Eigenschaft</duplicate_filter>
+      <filter_with_wrong_type>Eigenschaften vom Typ 'rationalScaleDefender' betreffen den Verteidiger und können daher nicht gefiltert werden, sondern nur unter 'enabledDefences' eingetragen werden. Betroffen ist die Eigenschaft</filter_with_wrong_type>
+      <filter_with_ignored_value>Bei Eigenschaften vom Typ 'boolean' ergibt ein Wert für die Filterung keinen Sinn und wird ignoriert. Die betroffene Eigenschaft heißt</filter_with_ignored_value>
+      <duplicate_type_declaration>Doppelte Typdeklaration für die Eigenschaft</duplicate_type_declaration>
+      <missing_type_declaration>Fehlende Typdeklaration für die Eigenschaft</missing_type_declaration>
+      <faulty_input>Fehler in der XML-Eingabe</faulty_input>
+      <effortless_attack>müheloser Angriff</effortless_attack>
+      <excluded_attack>ausgeschlossener Angriff</excluded_attack>
+      <no_defence>Der Angriff gelingt mühelos, weil keine Verteidigung vorhanden ist. Um dies zu ändern, tragen Sie den Wert des 'defence'-Attributs der Eigenschaft unter 'enabledDefences' ein.</no_defence>
+      <no_defence_create_attribute>Legen Sie für diese Eigenschaft zunächst ein 'defence'-Attribut an.</no_defence_create_attribute>
+      <defence_would_be_in_vain>Der Angriff gelänge auch ohne Verteidigung mühelos, daher wird sie nicht einberechnet.</defence_would_be_in_vain>
+      <deterrence>Dieser Wert hält den Angreifer ab.</deterrence>
+      <deterrence_hint>Um dies zu ändern, entfernen oder lockern Sie den entsprechenden Eintrag unter 'filter'.</deterrence_hint>
+      <for_defence>für Verteidigung</for_defence>
+      <by>durch</by>
+      <by_hint>Von diesen Angriffsknoten stammt der rechts stehende Wert ursprünglich.</by_hint>
+      <missing_value>mit Voreinstellungen von</missing_value>
+      <missing_value_hint>Ggf. können Sie einen Wert für die Eigenschaft im jeweiligen Unterziel festlegen.</missing_value_hint>
+
+      <wrong_application_of_filter>FEHLER: Versuch den Typ 'rationalScaleDefender' zu filtern</wrong_application_of_filter>
+      <unknown_type>WARNUNG: Unbekannter Typ</unknown_type>
+      <attacknode_without_type>FEHLER: Typ des Angriffsknotens muss angegeben sein, um den voreingestellten Wert zu bestimmen.</attacknode_without_type>
+      <greater_than_one>WARNUNG: Eine Wahrscheinlichkeit größer als 100% ergibt keinen Sinn.</greater_than_one>
+      <repetition>durch Wiederholung ausgehend von</repetition>
+      <or_node_leaf>WARNUNG: Oder-Knoten ohne Unterziele.</or_node_leaf>
+      <warn_default>WARNUNG: Kein Wert in der XML-Datei angegeben. Voreinstellung wird verwendet.</warn_default>
+      <reserved_property>FEHLER: Der reservierten Eigenschaft kann kein Wert zugewiesen werden</reserved_property>
+      <reserved_property_type>FEHLER: Die reservierte Eigenschaft muss den Typ boolean haben</reserved_property_type>
+    </translation>

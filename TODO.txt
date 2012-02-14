@@ -1,0 +1,3 @@
+- The namespace in property declarations should be taken into account. This means that properties can no longer be referenced using a name attribute of the element property. Properties must have their own element names.
+- Write a test script that compares the output of Libxslt and Saxon while ignoring generated ids.
+- Define a new rational type that behaves the same way as 'rationalScale' execept for using the maximum value instead of the sum. This type would model e. g. expected prison time more realisticly.

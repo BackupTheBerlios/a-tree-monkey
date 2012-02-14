@@ -1,0 +1,56 @@
+    <translation xml:lang="en" xmlns="urn:attacktree.org:schemas:attack-tree-monkey:1.0">
+      <constraints>Constraints</constraints>
+      <attacker>Attacker</attacker>
+      <defender>Defender</defender>
+      <attack_tree>Attack Tree</attack_tree>
+      <overview>Overview</overview>
+      <details>Details</details>
+      <excluded_attacks>Excluded Attacks</excluded_attacks>
+      <defences_not_applicable>Activated defences that are not applicable to this attack tree</defences_not_applicable>
+      <attack_tree_of_defences><span xmlns='http://www.w3.org/1999/xhtml' style="font-style:italic;">Defences</span> and <span xmlns='http://www.w3.org/1999/xhtml' class="attacktitleUndefended" style="font-style:italic;">effortless attacks</span> in the attack tree</attack_tree_of_defences>
+      <skip_defences>Defences inside an effortless attack are skipped when calculating its parents values.</skip_defences>
+      <properties>Properties</properties>
+      <direct_properties>Including directly stated values</direct_properties>
+      <means>Means</means>
+      <for_end>for end</for_end>
+      <sufficient>sufficient</sufficient>
+      <necessary>necessary</necessary>
+      <or>or</or>
+      <and>and</and>
+      <is_false>is false</is_false>
+      <false>false</false>
+      <true>true</true>
+      <none>none</none>
+      <duplicate_property_name>duplicate property name</duplicate_property_name>
+      <at_attacknode>at attack node</at_attacknode>
+      <unknown_attacknode_type>'type' attribute must be set to 'or' or 'and'</unknown_attacknode_type>
+      <duplicate_filter>Duplicate filter request for property</duplicate_filter>
+      <filter_with_wrong_type>Properties of type 'rationalScaleDefender' refer to the defender and therefore cannot be filtered, but can only be mentioned below 'enabledDefences'. The name of the affected property is</filter_with_wrong_type>
+      <filter_with_ignored_value>Specification of a value for filtering does not make sense when applied to a property of type 'boolean'. The name of the affected property is</filter_with_ignored_value>
+      <duplicate_type_declaration>duplicate type declaration of the property</duplicate_type_declaration>
+      <missing_type_declaration>missing type declaration of the property</missing_type_declaration>
+      <faulty_input>Faulty XML input</faulty_input>
+      <repeat_with_wrong_type>'repeat' attribute contains a property with the inappropriate type</repeat_with_wrong_type>
+      <effortless_attack>effortless attack</effortless_attack>
+      <excluded_attack>excluded attack</excluded_attack>
+      <no_defence>The attack can be performed effortlessly, because there is no defence. In order to change that, write the value of the 'defence' attribute below 'enabledDefences'.</no_defence>
+      <no_defence_create_attribute>Create a 'defence' attribute for the property first.</no_defence_create_attribute>
+      <defence_would_be_in_vain>The attack would be effortless even with the defence enabled. So we disable it here.</defence_would_be_in_vain>
+      <deterrence>This value deters the attacker.</deterrence>
+      <deterrence_hint>Remove or decrease the respective value below 'filter' in order to change that.</deterrence_hint>
+      <for_defence>for defence</for_defence>
+      <by>by</by>
+      <by_hint>The value on the right originates from these attack nodes.</by_hint>
+      <missing_value>using defaults from</missing_value>
+      <missing_value_hint>You may want to add a value for the property in the respective subgoal.</missing_value_hint>
+
+      <wrong_application_of_filter>ERROR: attempt to filter type 'rationalScaleDefender'</wrong_application_of_filter>
+      <unknown_type>WARNING: Type unknown</unknown_type>
+      <attacknode_without_type>ERROR: Type of attacknode from XML file is required to set the default value.</attacknode_without_type>
+      <greater_than_one>WARNING: Probabilities greater than 100% do not make sense.</greater_than_one>
+      <repetition>through repetition based on</repetition>
+      <or_node_leaf>WARNING: Or-node without subgoals.</or_node_leaf>
+      <warn_default>WARNING: No value specified in the XML file. Using default.</warn_default>
+      <reserved_property>ERROR: Attempt to assign a value to the reserved property</reserved_property>
+      <reserved_property_type>ERROR: The reserved property must be of type boolean</reserved_property_type>
+    </translation>

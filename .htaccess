@@ -1,0 +1,7 @@
+Options +Indexes
+AddCharset UTF-8 .htm
+AddCharset UTF-8 .txt
+
+# Browsers do not support XSLT extension 'exslt:node-set'
+AddType text/plain .xml
+

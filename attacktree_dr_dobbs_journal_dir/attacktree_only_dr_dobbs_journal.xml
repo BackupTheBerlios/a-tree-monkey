@@ -1,0 +1,80 @@
+  <attacknode type="or" title="Tresor öffnen" xmlns="urn:attacktree.org:schemas:attacktree:1.0">
+    <title xml:lang="en">Open Safe</title>
+    <description xml:lang="en">We model the safe as an optional defence so that we can statically include this attack tree as part of another one where cheaper defences may turn out to be good enough.</description>
+    <description xml:lang="de">Wir modellieren den Tresor als optionale Verteidigungsmaßnahme, um den Angriffsbaum statisch in einen anderen einbinden zu können, in welchem sich vielleicht billigere Verteidungsmaßnahmen als ausreichend herausstellen.</description>
+    <property name="securityCostsInUSDollarPerYear" defence="Ratenzahlung für Tresor">200</property>
+    <attacknode title="Schloß knacken">
+      <title xml:lang="en">Pick Lock</title>
+      <description></description>
+      <property name="possible">true</property>
+      <property name="noSpecialEquipment">false</property>
+      <property name="costOfAttackInUSDollar">30000</property>
+    </attacknode>
+    <attacknode type="or" title="Kombination herausfinden">
+      <title xml:lang="en">Learn Combo</title>
+      <description></description>
+      <attacknode title="Notiz mit der Kombination finden">
+	<title xml:lang="en">Find Written Combo</title>
+	<property name="possible">false</property>
+	<property name="noSpecialEquipment">true</property>
+	<property name="costOfAttackInUSDollar">75000</property>
+      </attacknode>
+      <attacknode type="or" title="Kombination von Zielperson erfahren">
+	<title xml:lang="en">Get Combo From Target</title>
+	<attacknode title="Bedrohen">
+	  <title xml:lang="en">Threaten</title>
+	  <description xml:lang="en">hire thugs to do the threatening</description>
+	  <description xml:lang="de">Gorillas anheuern</description>
+	  <property name="possible">false</property>
+	  <property name="noSpecialEquipment">true</property>
+	  <property name="costOfAttackInUSDollar">60000</property>
+	</attacknode>
+	<attacknode title="Erpressen">
+	  <title xml:lang="en">Blackmail</title>
+	  <property name="possible">false</property>
+	  <property name="noSpecialEquipment">true</property>
+	  <property name="costOfAttackInUSDollar">100000</property>
+	</attacknode>
+	<attacknode type="and" title="Ausspähen">
+	  <title xml:lang="en">Eavesdrop</title>
+	  <attacknode title="Gespräch abhören">
+	    <title xml:lang="en">Listen to Conversation</title>
+	    <property name="possible">true</property>
+	    <property name="noSpecialEquipment">false</property>
+	    <property name="costOfAttackInUSDollar">20000</property>
+	  </attacknode>
+	  <attacknode title="Zielperson dazu bringen, die Kombination zu nennen">
+	    <title xml:lang="en">Get Target to State Combo</title>
+	    <property name="possible">false</property>
+	    <property name="noSpecialEquipment">true</property>
+	    <property name="costOfAttackInUSDollar">40000</property>
+	  </attacknode>
+	</attacknode>
+	<attacknode type="and" title="Bestechen">
+	  <title xml:lang="en">Bribe</title>
+	  <description xml:lang="en">The added subtree shows how to include a new defence that becomes effective under new constrains for the defender, only. (The original article suggests changing the cost of attack in place from $20000 to $80000.)</description>
+	  <description xml:lang="de">Der Unterbaum zeigt, wie man eine neue Verteidigungmöglichkeit hinzufügt, die erst unter neuen Randbedingungen für den Verteidiger wirksam wird. (Der ursprüngliche Artikel schlägt vor, den Wert an Ort und Stelle von 20000 auf 80000 US-$ zu erhöhen.)</description>
+	  <property name="possible">true</property>
+	  <property name="noSpecialEquipment">true</property>
+	  <property name="costOfAttackInUSDollar">20000</property>
+	  <attacknode title="Zusatzaufwand um eine gut bezahlte Zielperson zu bestechen">
+	    <title xml:lang="en">Extra effort to bribe well paid target</title>
+	    <property name="costOfAttackInUSDollar">60000</property>
+	    <property name="securityCostsInUSDollarPerYear" defence="Gehaltserhöhung">5000</property>
+	  </attacknode>
+	</attacknode>
+      </attacknode>
+    </attacknode>    
+    <attacknode title="Tresor aufschweißen">
+      <title xml:lang="en">Cut Open Safe</title>
+      <property name="possible">true</property>
+      <property name="noSpecialEquipment">false</property>
+      <property name="costOfAttackInUSDollar">10000</property>
+    </attacknode>
+    <attacknode title="falsch einrichten">
+      <title xml:lang="en">Install Improperly</title>
+      <property name="possible">false</property>
+      <property name="noSpecialEquipment">true</property>
+      <property name="costOfAttackInUSDollar">100000</property>
+    </attacknode>
+  </attacknode>

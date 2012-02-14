@@ -1,0 +1,20 @@
+<?xml version="1.0" ?><?xml-stylesheet href="attack_tree_monkey/attacktree.xsl" type="text/xsl"?>
+<!DOCTYPE attacktree [
+  <!ENTITY TYPE SYSTEM "include/type.xml">
+  <!ENTITY DEFENCES SYSTEM "include/defences.xml">
+  <!ENTITY DEFENDER SYSTEM "attacktree_dr_dobbs_journal_dir/nodefence.xml">
+  <!ENTITY ATTACKTREEROOT SYSTEM "attacktree_dr_dobbs_journal_dir/attacktree_only_dr_dobbs_journal.xml">
+]>
+<attacktree xmlns="urn:attacktree.org:schemas:attacktree:1.0">
+  <description xml:lang="en">Example from <a xmlns='http://www.w3.org/1999/xhtml' href="http://www.schneier.com/paper-attacktrees-ddj-ft.html">Bruce Schneier's article</a> in Dr. Dobb's Journal December 1999 with values from figures 1 to 5 and the <b xmlns='http://www.w3.org/1999/xhtml'>filtering from figure 6.</b></description>
+  &TYPE;
+  &DEFENDER;
+  <attacker>
+    <description>Der Angreifer kann die Ausrüstung nicht beschaffen oder nicht mit ihr umgehen.</description>
+    <description xml:lang="en">The attacker cannot buy special equipment or does not know how to use it.</description>
+    <filter>
+      <noSpecialEquipment/>
+    </filter>
+  </attacker>
+  &ATTACKTREEROOT;
+</attacktree>

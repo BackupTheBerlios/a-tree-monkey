@@ -1,0 +1,8 @@
+  <defender xmlns="urn:attacktree.org:schemas:attacktree:1.0">
+    <description>schafft sich einen Tresor an, damit der Angreifer sich nicht einfach die Wertsachen nehmen kann.</description>
+    <description xml:lang="en">installs a safe so that the attacker cannot just grab the assets.</description>
+    &DEFENCES;
+    <enabledDefences><!-- List the defences for properties of type 'rationalScaleDefender' in order to make the respective attack necessary. Disabled ancestors will stop propagation. -->
+      <defence name="Ratenzahlung für Tresor" />
+    </enabledDefences>
+  </defender>

@@ -1,0 +1,9 @@
+<at:defences xmlns:at="urn:attacktree.org:schemas:attacktree:1.0">
+  <at:translation xml:lang="en">
+    <at:defence name="Tresor kaufen und installieren">Buy and install a safe</at:defence>
+    <at:defence name="Ratenzahlung für Tresor">Pay instalment for a safe</at:defence>
+    <at:defence name="Nur so ausgedacht">Just thought out</at:defence>
+    <at:defence name="Alarmanlage kaufen und installieren">Buy and install an alarm system</at:defence>
+    <at:defence name="Gehaltserhöhung">Rise in salary</at:defence>
+  </at:translation>
+</at:defences>

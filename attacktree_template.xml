@@ -1,0 +1,43 @@
+<?xml version="1.0" ?><?xml-stylesheet href="attack_tree_monkey/attacktree.xsl" type="text/xsl"?>
+<!DOCTYPE attacktree [
+]>
+<attacktree xmlns="urn:attacktree.org:schemas:attacktree:1.0">
+  <description></description>
+
+  <type>
+    <rationalScaleDefender><!-- namespace of properties is currently ignored -->
+    </rationalScaleDefender>
+    <rationalScale><!-- namespace of properties is currently ignored -->
+    </rationalScale>
+    <probability><!-- namespace of properties is currently ignored -->
+    </probability>
+    <boolean><!-- namespace of properties is currently ignored -->
+
+      <!-- reserved properties that must be present and cannot be set by the user. The usual defaults may not apply. -->
+      <effortlessAttack/>
+      <includedAttack/>
+    </boolean>
+  </type>
+
+  <defender>
+    <description></description>
+    <defences>
+      <translation xml:lang="en">
+      </translation>
+    </defences>
+
+    <enabledDefences>
+    </enabledDefences>
+  </defender>
+
+  <attacker>
+    <description></description>
+    <filter><!-- namespace of properties is currently ignored -->
+    </filter>
+  </attacker>
+
+  <!--
+  <attacknode type="or" title="">
+  </attacknode>
+  -->
+</attacktree>

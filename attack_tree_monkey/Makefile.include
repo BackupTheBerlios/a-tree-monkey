@@ -1,0 +1,2 @@
+$(atm_dir)/atm: $(atm_dir)/attacktree.xsl $(atm_dir)/attacktree_calculation.xsl $(atm_dir)/attacktree_internationalization.xsl $(atm_dir)/attacktree_sanity_check.xsl $(atm_dir)/userinterface.xml $(atm_dir)/lang/*
+	touch $@

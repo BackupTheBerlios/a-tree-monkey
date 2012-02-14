@@ -1,0 +1,54 @@
+  <at:type xmlns:at="urn:attacktree.org:schemas:attacktree:1.0">
+    <at:rationalScaleDefender><!-- Defender tries to minimize the value (see also 'enabledDefences'). The default value is 0. -->
+      <securityCostsInEuro>
+	<at:translation xml:lang="de">Sicherheitskosten<suffix>€</suffix></at:translation>
+	<at:translation xml:lang="en">security costs<suffix>€</suffix></at:translation>
+      </securityCostsInEuro>
+      <securityCostsInUSDollarPerYear>
+	<at:translation xml:lang="de">jährliche Sicherheitskosten<suffix>US-$</suffix></at:translation>
+	<at:translation xml:lang="en"><prefix>$</prefix>security costs per year</at:translation>
+      </securityCostsInUSDollarPerYear>
+    </at:rationalScaleDefender>
+    <at:rationalScale><!-- Attacker tries to minimize the value. The default value is 0 except for or-nodes where it is INFINITY. -->
+      <workingHours>
+	<at:translation xml:lang="de">Arbeitsaufwand<suffix>Stunden</suffix></at:translation>
+	<at:translation xml:lang="en">work<suffix>hours</suffix></at:translation>
+      </workingHours>
+      <costOfAttackInUSDollar>
+	<at:translation xml:lang="de">Angriffskosten<suffix>US-$</suffix></at:translation>
+	<at:translation xml:lang="en"><prefix>$</prefix>Cost of attack</at:translation>
+      </costOfAttackInUSDollar>
+      <delayInDays>
+	<at:translation xml:lang="de">Wartezeit<suffix>Tage</suffix></at:translation>
+	<at:translation xml:lang="en">delay<suffix>days</suffix></at:translation>
+      </delayInDays>
+      <numberOfWitnesses>
+	<at:translation xml:lang="de">Zeugen</at:translation>
+	<at:translation xml:lang="en">witnesses</at:translation>
+      </numberOfWitnesses>
+      <prisonTimeIfConvicted>
+	<at:translation xml:lang="de">Haftstrafe<suffix>Jahre</suffix></at:translation>
+	<at:translation xml:lang="en">prison sentence<suffix>years</suffix></at:translation>
+      </prisonTimeIfConvicted>
+    </at:rationalScale>
+    <at:probability><!-- Attacker tries to maximize the value. The default value is 1 except for or-nodes where it is 0. -->
+      <chanceOfSuccess>
+	<at:translation xml:lang="de">Erfolgsaussicht</at:translation>
+	<at:translation xml:lang="en">chance of success</at:translation>
+      </chanceOfSuccess>
+    </at:probability>
+    <at:boolean><!-- Attacker wants this value to be true. The default value is 'true' except for or-nodes where it is 'false'. -->
+      <possible>
+	<at:translation xml:lang="de">möglich</at:translation>
+	<at:translation xml:lang="en">possible</at:translation>
+      </possible>
+      <noSpecialEquipment>
+	<at:translation xml:lang="de">Spezialausrüstung unnötig</at:translation>
+	<at:translation xml:lang="en">no special equipment</at:translation>
+      </noSpecialEquipment>
+
+      <!-- reserved properties that must be present and cannot be set by the user. The usual defaults may not apply. -->
+      <effortlessAttack/>
+      <includedAttack/><!-- that means the attack is not excluded by filters etc.  -->
+    </at:boolean>
+  </at:type>

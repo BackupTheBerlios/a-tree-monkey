@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><!-- to be read by "attacktree.xsl" type="text/xsl" -->
+<!DOCTYPE userinterface [
+  <!ENTITY GERMAN SYSTEM "lang/de.xml">
+  <!ENTITY ENGLISH SYSTEM "lang/en.xml">
+]>
+  <userinterface xmlns="urn:attacktree.org:schemas:attack-tree-monkey:1.0">
+    &GERMAN;
+    &ENGLISH;
+  </userinterface>
